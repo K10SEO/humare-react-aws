@@ -1,0 +1,8 @@
+// keybindings.json
+[
+    {
+      "key": "ctrl+alt+c",
+      "command": "settings.cycle",
+    }
+  ]
+  
