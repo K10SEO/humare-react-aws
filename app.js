@@ -4,7 +4,7 @@ const { sendContactSMS } = require("./src/util/sensAPI");
 require('dotenv').config();
 const cors = require('cors');
 
-// CORS 먼저! (중요)
+// CORS 설정
 app.use(cors({
     origin: [
         'https://housemanager1661-3822.site',
@@ -14,22 +14,16 @@ app.use(cors({
     credentials: true
 }));
 
-// Body parser
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.set("port", process.env.PORT || 80);
+app.set("port", 80);
 
-// 정적 파일 제공 부분 전부 삭제!
-// app.use(express.static(...)) ← 삭제
-// app.get("/", ...) ← 삭제
-
-// API만 남김
+// API만!
 app.post("/api/contact", async (req, res) => {
     try {
         const { name, contact, content } = req.body;
-        
-        console.log('SMS 전송 시도:', { name, contact, content });
+        console.log('SMS 전송 요청:', { name, contact });
         
         await sendContactSMS(name, contact, content);
         
@@ -38,12 +32,12 @@ app.post("/api/contact", async (req, res) => {
         console.error('SMS 전송 실패:', err);
         res.status(500).json({ 
             success: false,
-            message: 'SMS 전송에 실패했습니다.'
+            message: 'SMS 전송 실패'
         });
     }
 });
 
-// 서버 시작
+// 서버 시작 (DB 연결 제거!)
 app.listen(app.get("port"), '0.0.0.0', () => {
     console.log(`API Server running on port ${app.get("port")}`);
 });
