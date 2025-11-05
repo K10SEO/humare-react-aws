@@ -1,2 +1,8 @@
 node_modules
+<<<<<<< HEAD
 .env
+=======
+.env
+src
+public
+>>>>>>> master
