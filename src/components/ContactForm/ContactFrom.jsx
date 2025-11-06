@@ -244,7 +244,7 @@ const ConsultationForm = () => {
     setSuccessMessage('');
 
     try {
-      const response = await fetch('http://54.180.223.204/api/contact', {
+      const response = await fetch('/api/contact', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
