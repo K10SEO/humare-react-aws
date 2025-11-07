@@ -10,6 +10,16 @@ const sensService = new SENSService();
 app.use(cors());
 app.use(express.json());
 
+// 헬스체크 엔드포인트 추가
+app.get('/api/health', (req, res) => {
+  res.json({ 
+    status: 'OK', 
+    timestamp: new Date(),
+    message: 'Server is healthy'
+  });
+});
+
+
 // 상담 문의 API
 app.post('/api/contact', async (req, res) => {
   try {
