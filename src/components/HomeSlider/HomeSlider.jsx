@@ -49,7 +49,7 @@ export default function HomeSlider(){
 
 const SliderContainer = styled.div`
     width: 100%;
-    height: ${({reHeight}) => reHeight ? `${reHeight}` : "900"}px;
+    /* height: ${({reHeight}) => reHeight ? `${reHeight}` : "900"}px; */
     overflow: hidden;
     
     .slick-slider,

@@ -31,8 +31,9 @@ function Home() {
 export default Home
 
 const MainContainer = styled.div`
-  margin: 0 auto ;
-  width: 80%;
+  /* margin: 0 auto; */
+  padding: 0 5rem;
+  /* width: 80%; */
   font-size: 4rem;
 `
 

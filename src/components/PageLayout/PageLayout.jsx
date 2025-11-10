@@ -18,13 +18,14 @@ export default function PageLayout({name, imgs, flex}) {
 }
 
 const PageLayoutContainer = styled.div`
-  margin:${({flex, imgs}) => flex ? "5rem 0rem 0rem" : imgs === "none"  ? "none" : "5rem 30rem" };
+  width: 100%;
+  margin:${({flex, imgs}) => flex ? "5rem 0rem 0rem" : imgs === "none"  ? "none" : "5rem auto" };
   padding: 3vw;
   border-radius: 30px;
   background-color: ${({imgs}) => imgs === "none" ? "none" : "#d2c8ac"};
 
   @media (max-width: 1024px) {
-    margin:${({flex, imgs}) => flex ? "5rem 0rem 0rem" : imgs === "none"  ? "none" : "5rem 5rem" };
+    margin:${({flex, imgs}) => flex ? "5rem 0rem 0rem" : imgs === "none"  ? "none" : "5rem auto" };
   }
 `
 

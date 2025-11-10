@@ -67,7 +67,6 @@ const HeaderContainer = styled.header`
   width: 100%;
   background-color: var(--main-green);
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
   position: relative;
@@ -81,6 +80,7 @@ const NavContainer = styled.nav`
   width: 100%;
   display: flex;
   justify-content:space-between;
+  /* gap: 30rem; */
   align-items: center;
 `
 
@@ -141,9 +141,15 @@ const Logo = styled.img`
   width: 15rem;
   margin: 2rem;
   cursor: pointer;
+
+  @media (max-width: 425px){
+    width: 10rem;
+  }
 `
 const WrrapContainer = styled.div`
   min-width: 183px;
+  display: flex;
+  align-items: center;
 `
 const PhoneText = styled.a`
   color: var(--font-white);
@@ -152,16 +158,23 @@ const PhoneText = styled.a`
   float: left;
   line-height: 2.1;
   text-decoration: none;
+  @media (max-width: 425px){
+    font-size: 2rem;
+  }
 `
 const Menu = styled(MenuIcon)`
   display: none;
-  width: 50px;
+  width: 5rem;
   float: left;
   margin-left: 2rem;
   cursor: pointer;
 
   @media (max-width: 768px) {
     display: block
+  }
+
+  @media (max-width: 425px){
+    width: 3rem;
   }
 `
 

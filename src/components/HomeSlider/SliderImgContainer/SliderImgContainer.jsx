@@ -13,7 +13,7 @@ const ImgContainer = styled.div`
 
 const SlideImg = styled.img`
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     object-fit: fill; // 비율 무시하고 박스에 딱 맞춤
     display: block;
     position: relative;

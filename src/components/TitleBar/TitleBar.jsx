@@ -15,7 +15,7 @@ function TitleBar({name, topmargin}) {
 export default TitleBar
 
 const TitleContainer = styled.div`
-  width: 30vw;
+  width: 60%;
   margin: 0 auto;
   margin-top: ${({topmargin}) => typeof topmargin === 'number' ? topmargin : 5}rem;
   background-color:  #334536;
@@ -25,14 +25,22 @@ const TitleContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem 2rem;
-  font-size: 1.5vw;
+  padding: 1vw 2vw;
+  font-size: 3.5rem;
   gap: 2rem;
     & > span {
       font-weight: 100;
     }
+
+  @media (max-width: 768px) {
+    padding: 2vw 2vw;
+    gap: 1rem;
+    font-size: 2rem;
+    width: 65%;
+
+  }
 `
 
 const TitleImg = styled.img`
-  width: 30%;
+  width: 50%;
 `
