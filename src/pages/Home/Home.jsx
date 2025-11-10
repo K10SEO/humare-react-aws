@@ -17,8 +17,8 @@ function Home() {
     <main>
       <HomeSlider />
       <MainContainer>
-        <PageLayout flex={"flex"} name={"프리미엄"} imgs={images}/>
-        <PageLayout name={"오시는길"} imgs={"none"}/>
+        <PageLayout name={"프리미엄"} imgs={images} fullWidth={true}/>
+        <PageLayout name={"오시는길"} imgs={"none"} naver={true}/>
         <MapContainer>
           <NaverMap/>
         </MapContainer>
@@ -31,10 +31,10 @@ function Home() {
 export default Home
 
 const MainContainer = styled.div`
-  padding: 0 15rem;
+  padding: 0 30rem;
 
   @media (max-width: 1024px) {  // ⭐ 새로 추가! (태블릿/중간 크기)
-    padding: 0 10rem;
+    padding: 0 15rem;
     
   }
 

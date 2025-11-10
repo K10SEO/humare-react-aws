@@ -18,7 +18,7 @@ const TitleContainer = styled.div`
   width: 50%;
   margin: 0 auto;
   margin-top: ${({topmargin}) => typeof topmargin === 'number' ? topmargin : 5}rem;
-  background-color:  #334536;
+  background-color:  var(--main-green);
   border-radius: 50px;
   box-shadow: 3px 3px 6px 2px #8a8c91;
   color: white;
@@ -56,5 +56,5 @@ const TitleContainer = styled.div`
 `
 
 const TitleImg = styled.img`
-  width: 40%;
+  width: 30%;
 `

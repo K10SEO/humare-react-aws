@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { MenuIcon } from '../Icon/Icon';
-import logo from '../../assets/img/logo/Logo3.png';
+import logo from '../../assets/img/logo/Logo1.webp';
 import { Link } from 'react-router-dom'
 
 function Nav() {
@@ -9,9 +9,9 @@ function Nav() {
   const [isInitialRender, setIsInitialRender] = useState(true);
 
   const menuItems = [
+    { name: "사업개요", to: "/business_overview" },
     { name: "입지환경", to: "/location_environment" },
     { name: "단지배치도", to: "/Location_plan" },
-    { name: "사업개요", to: "/business_overview" },
     { name: "모델하우스", to: "/model_house" },
     { name: "타입안내", to: "/Type" },
   ]

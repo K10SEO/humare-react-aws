@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import useMapStore from '../../util/MapStore';
-import AkLogo from '../../assets/img/logo/Logo1.webp'
+import AkLogo from '../../assets/img/logo/Logo2.webp'
 
 function NaverMap() {
   const mapElement = useRef(null);
@@ -26,7 +26,7 @@ function NaverMap() {
       // 인포윈도우 생성
       const infoWindow = new naver.maps.InfoWindow({
         content: `
-          <div style="padding:50px 10px 40px; max-width:200px; font-size:14px;">
+          <div style="padding:50px 10px 40px; max-width:300px; font-size:14px;">
             <h1 style="font-size: 25px; font-weight: 700;">${marker.title}</h1>
             <p>
               <br/>

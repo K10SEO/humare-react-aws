@@ -4,7 +4,7 @@ const useMapStore = create((set) => ({
   center: { lat: 37.494488, lng: 126.929635 },
   zoom: 15,
   markers: [
-    { id: 1, lat: 37.494488, lng: 126.929635, title: '보라매 휴마레', description: '서울특별시 동작구 신대방동 725' },
+    { id: 1, lat: 37.494488, lng: 126.929635, title: '신길 AK 푸르지오', description: '서울특별시 영등포구 신길동 255-9' },
   ],
   setCenter: (lat, lng) => set({ center: { lat, lng } }),
   setZoom: (zoom) => set({ zoom }),

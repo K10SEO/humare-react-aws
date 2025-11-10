@@ -27,21 +27,45 @@ export default function HomeSlider(){
             setreHeight(window.innerHeight - 93);
         };
   
-        handleResize(); // 1. 초기 실행 (컴포넌트 마운트 시 1회)
-  
-        window.addEventListener("resize", handleResize); // 2. 이벤트 리스너 등록
+        handleResize();
+        window.addEventListener("resize", handleResize);
   
         return () => {
-         window.removeEventListener("resize", handleResize); // 3. 클린업 (컴포넌트 언마운트 시에만!)
+         window.removeEventListener("resize", handleResize);
         };
     }, []);
 
     return (
         <SliderContainer reHeight={reHeight}>
             <Slider {...settings}>
-              <SliderImgContainer src={slider1} alt={'아파트사진'}/>
-              <SliderImgContainer src={slider2} alt={'아파트사진'}/>
-              {/* <SliderImgContainer src={slider3} alt={'아파트사진'}/> */}
+                {/* 사진 1: 왼쪽 정렬, 상단에서 5rem 아래 */}
+                <SliderImgContainer 
+                  src={slider1} 
+                  alt={'아파트사진'}
+                  subtitle="PREMIUM"
+                  title="• 푸르지오의 검증된 가치,<br/>• 주거의 특화된 단지와공간설계<br/>• 도시를 대표하는 인프라"
+                  showPhone={false}
+                  textAlign="left"
+                  topMargin="40rem"
+                  leftPadding="10rem"
+                  rightPadding="10rem"
+                />
+
+                {/* 사진 2: 왼쪽 정렬, 하단에서 3rem 위 */}
+                <SliderImgContainer 
+                  src={slider2} 
+                  alt={'아파트사진'}
+                  subtitle="신길 AK PRUGIO"
+                  title="삶이 남다른 서울의 중심,<br/>푸르지오의 높은 자부심"
+                  phoneLabel="분양문의 대표 상담번호"
+                  phoneNumber="1661-3822"
+                  showPhone={true}
+                  textAlign="left"
+                  bottomMargin="-5rem"
+                  topMargin="15rem"
+                  leftPadding="15rem"
+                  rightPadding="15rem"
+                />
             </Slider>
         </SliderContainer>
     )
@@ -49,7 +73,6 @@ export default function HomeSlider(){
 
 const SliderContainer = styled.div`
     width: 100%;
-    /* height: ${({reHeight}) => reHeight ? `${reHeight}` : "900"}px; */
     overflow: hidden;
     
     .slick-slider,

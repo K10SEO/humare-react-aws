@@ -4,13 +4,13 @@ import styled from 'styled-components'
 function Footer() {
   return (
     <FooterContainer>
-        <HeadText>보라매 휴마레</HeadText>
+        <HeadText>신길 AK 푸르지오</HeadText>
         <DetailList>
-            <DetailItem>현장명: 보라매 휴마레</DetailItem>
-            <DetailItem>현장주소: 서울특별시 동작구 신대방동 725</DetailItem>
+            <DetailItem>현장명: 신길 AK 푸르지오</DetailItem>
+            <DetailItem>현장주소: 서울특별시 영등포구 신길동 255-9</DetailItem>
             <DetailItemPhonNumber>담당자번호: 1661-3822</DetailItemPhonNumber>
         </DetailList>
-        <SmallText>Copyright © 2024 보라매 휴마레. All Rights Reserved.</SmallText>
+        <SmallText>Copyright © 2025 신길 AK 푸르지오. All Rights Reserved.</SmallText>
     </FooterContainer>
   )
 }

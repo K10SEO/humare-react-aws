@@ -19,7 +19,7 @@ const GlobalStyled = createGlobalStyle`
     }
 
     :root {
-        --main-green: #334536;
+        --main-green: #1B5153;
         --font-white: #ffffff;
         --main-font: 'TAEBAEKmilkyway';
         --tmon-font: 'TmonMonsori';
