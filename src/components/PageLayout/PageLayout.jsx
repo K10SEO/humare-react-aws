@@ -28,6 +28,14 @@ const PageLayoutContainer = styled.div`
     margin:${({flex, imgs}) => flex ? "5rem 0rem 0rem" : imgs === "none"  ? "none" : "5rem 10rem" };
   }
 
+  @media (max-width: 768px) {
+    margin:${({flex, imgs}) => flex ? "5rem 0rem 0rem" : imgs === "none"  ? "none" : "5rem 2rem" };
+  }
+
+  @media (max-width: 480px) {  // ⭐ 이 전체 블록 추가!
+    margin:${({flex, imgs}) => flex ? "5rem 0rem 0rem" : imgs === "none"  ? "none" : "5rem 2rem" };
+  }
+
 `
 
 const ImgArrayContainer = styled.div`
