@@ -31,10 +31,20 @@ function Home() {
 export default Home
 
 const MainContainer = styled.div`
-  /* margin: 0 auto; */
-  padding: 0 5rem;
-  /* width: 80%; */
-  font-size: 4rem;
+  padding: 0 15rem;
+
+  @media (max-width: 1024px) {  // ⭐ 새로 추가! (태블릿/중간 크기)
+    padding: 0 10rem;
+    
+  }
+
+  @media (max-width: 768px) {
+    padding: 2vw 2vw;
+  }
+
+  @media (max-width: 480px) {  // ⭐ 이 전체 블록 추가!
+    padding: 1.5vw 2vw;
+  }
 `
 
 const MapContainer = styled.div`

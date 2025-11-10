@@ -147,7 +147,6 @@ const Logo = styled.img`
   }
 `
 const WrrapContainer = styled.div`
-  min-width: 183px;
   display: flex;
   align-items: center;
 `

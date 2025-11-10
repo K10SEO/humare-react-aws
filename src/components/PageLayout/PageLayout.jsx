@@ -18,15 +18,16 @@ export default function PageLayout({name, imgs, flex}) {
 }
 
 const PageLayoutContainer = styled.div`
-  width: 100%;
-  margin:${({flex, imgs}) => flex ? "5rem 0rem 0rem" : imgs === "none"  ? "none" : "5rem auto" };
+  /* width: 100%; */
+  margin:${({flex, imgs}) => flex ? "5rem 0rem 0rem" : imgs === "none"  ? "none" : "5rem 15rem" };
   padding: 3vw;
   border-radius: 30px;
   background-color: ${({imgs}) => imgs === "none" ? "none" : "#d2c8ac"};
 
   @media (max-width: 1024px) {
-    margin:${({flex, imgs}) => flex ? "5rem 0rem 0rem" : imgs === "none"  ? "none" : "5rem auto" };
+    margin:${({flex, imgs}) => flex ? "5rem 0rem 0rem" : imgs === "none"  ? "none" : "5rem 10rem" };
   }
+
 `
 
 const ImgArrayContainer = styled.div`

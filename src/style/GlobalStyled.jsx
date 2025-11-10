@@ -56,7 +56,9 @@ const GlobalStyled = createGlobalStyle`
     }
 
     html, body {
-        min-width: 480px;
+        /* min-width: 480px; */
+        width: 100%;
+        overflow-x: hidden;
     }
 
     button {
