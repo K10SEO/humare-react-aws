@@ -193,7 +193,7 @@ const SuccessMessage = styled.div`
   border: 1px solid #9ae6b4;
 `;
 
-const ConsultationForm = () => {
+const ContactFrom = () => {
   const [formData, setFormData] = useState({
     name: '',
     contact: '',
@@ -374,4 +374,4 @@ const ConsultationForm = () => {
   );
 };
 
-export default ConsultationForm;
+export default ContactFrom;

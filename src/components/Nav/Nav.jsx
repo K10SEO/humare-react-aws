@@ -12,8 +12,9 @@ function Nav() {
     { name: "사업개요", to: "/business_overview" },
     { name: "입지환경", to: "/location_environment" },
     { name: "단지배치도", to: "/Location_plan" },
-    { name: "모델하우스", to: "/model_house" },
     { name: "타입안내", to: "/Type" },
+    { name: "모델하우스", to: "/model_house" },
+    { name: "상담문의", to: "/Consultation_form" },
   ]
 
   useEffect(() => {

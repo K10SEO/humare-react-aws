@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunksingill=self.webpackChunksingill||[]).push([[188],{8188:(s,n,e)=>{e.r(n),e.d(n,{default:()=>u});e(5043);var i=e(5306),l=e(3831),t=e(579);const u=function(){const s=(0,l.V)(e(889));return(0,t.jsx)(i.A,{name:"\uc785\uc9c0\ud658\uacbd",imgs:s})}}}]);
+//# sourceMappingURL=188.b7ec8807.chunk.js.map

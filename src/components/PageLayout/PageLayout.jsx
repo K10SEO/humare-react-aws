@@ -21,11 +21,11 @@ const PageLayoutContainer = styled.div`
   /* width: 100%; */
   margin: ${({flex, imgs, fullWidth, naver}) => 
     flex ? "5rem 0rem 0rem" : 
-    imgs === "none" ? (naver ? "5rem 0 0" : "5rem 0") :  // ⭐ 조건 추가
+    imgs === "none" ? (naver ? "5rem 0 0" : "5rem 0 0") :  // ⭐ 조건 추가
     fullWidth ? "5rem 0rem" : "5rem 30rem"
   };
   padding: ${({imgs, naver}) => 
-    imgs === "none" && naver ? "3vw 3vw 0" : "3vw"  // ⭐ 조건 추가
+    imgs === "none" && naver ? "3vw 3vw 0" : "3vw 0 0"  // ⭐ 조건 추가
   };
   border-radius: 30px;
   background-color: ${({imgs}) => imgs === "none" ? "none" : "#d2c8ac"};

@@ -1,4 +1,4 @@
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import {Route, Routes} from 'react-router-dom';
 import {lazy, Suspense} from "react";
 import Home from "./pages/Home/Home"
 
@@ -7,6 +7,7 @@ const LocationEnvironment = lazy(() => import("./pages/LocationEnvironment/Locat
 const LocationPlan = lazy(() => import("./pages/LocationPlan/LocationPlan"));
 const Type = lazy(() => import("./pages/Type/Type"));
 const ModelHouse = lazy(() => import("./pages/ModelHouse/ModelHouse"));
+const ConsultationForm = lazy(() => import("./pages/ConsultationForm/ConsultationForm"))
 
 function Router() {
     return(
@@ -18,6 +19,7 @@ function Router() {
          <Route path='/Location_plan' element={<LocationPlan/>} />
          <Route path='/Type' element={<Type/>} />
          <Route path='/model_house' element={<ModelHouse/>} />
+         <Route path='/Consultation_Form' element={<ConsultationForm/>} />
        </Routes>
       </Suspense>
     )
